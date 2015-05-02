@@ -3,8 +3,8 @@ from django.contrib import admin
 
 urlpatterns = patterns('',
 
-    url(r'^$', 'DjangoMe.views.home', name='home'),
-    url(r'^home2/', 'DjangoMe.views.home2', name='home'),
+    url(r'^$', 'joins.views.home', name='home'),
+    # url(r'^home2/', 'DjangoMe.views.home2', name='home'),
     # url(r'^blog/', include('blog.urls')),
 
     url(r'^admin/', include(admin.site.urls)),
