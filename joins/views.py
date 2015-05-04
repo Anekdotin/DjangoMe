@@ -5,6 +5,8 @@ from .models import Join
 
 
 def home(request):
+    print(request.META.get("REMOTE_ADDR"))
+    print(request.META.get("HTTP_X_FORWARDED_FOR"))
     #print (request.POST["email"], request.POST["email_2"])
     #Using regular django forms
     # form = EmailForm(request.POST or None)
